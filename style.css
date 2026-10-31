@@ -88,8 +88,8 @@ ul { list-style: none; }
 /* ===== ABOUT ===== */
 .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 3rem; align-items: start; }
 .about-avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
-.about-avatar { width: 180px; height: 180px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 40px rgba(108,99,255,.3); }
-.avatar-initials { font-size: 3.5rem; font-weight: 800; color: #fff; }
+.about-avatar { width: 180px; height: 180px; border-radius: 50%; overflow: hidden; box-shadow: 0 8px 40px rgba(108,99,255,.3); border: 4px solid rgba(108,99,255,.25); }
+.avatar-photo { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .about-badges { display: flex; flex-direction: column; gap: .5rem; width: 100%; }
 .badge { display: block; text-align: center; padding: .4rem .8rem; border-radius: 20px; font-size: .8rem; font-weight: 600; }
 .badge-green { background: #e6faf0; color: #16a34a; }
