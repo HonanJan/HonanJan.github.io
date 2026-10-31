@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HonanJan | Portfolio</title>
+  <meta name="description" content="HonanJan - Software Engineer Portfolio" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a class="nav-brand" href="#home">HonanJan</a>
+    <div class="nav-menu" id="navMenu">
+      <a class="nav-link" href="#about" data-i18n="nav.about"></a>
+      <a class="nav-link" href="#skills" data-i18n="nav.skills"></a>
+      <a class="nav-link" href="#experience" data-i18n="nav.experience"></a>
+      <a class="nav-link" href="#education" data-i18n="nav.education"></a>
+      <a class="nav-link" href="#certifications" data-i18n="nav.certifications"></a>
+      <a class="nav-link" href="#contact" data-i18n="nav.contact"></a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="zh">中</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-greeting" data-i18n="hero.greeting"></div>
+    <h1 class="hero-name">簡 浩男</h1>
+    <div class="hero-title">
+      <span class="hero-title-text" data-i18n="hero.title"></span>
+    </div>
+    <p class="hero-description" data-i18n="hero.description"></p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.contact"></a>
+      <a href="#experience" class="btn btn-outline" data-i18n="hero.work"></a>
+    </div>
+    <div class="hero-social">
+      <a href="mailto:jianhaonan72@gmail.com" class="social-link" title="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+      </a>
+      <a href="https://github.com/jianhaonan72" class="social-link" title="GitHub" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="about.title"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-avatar-wrap">
+        <div class="about-avatar">
+          <div class="avatar-initials">HJ</div>
+        </div>
+        <div class="about-badges">
+          <span class="badge badge-green">✓ JLPT N1</span>
+          <span class="badge badge-blue">✓ Java Silver 11</span>
+          <span class="badge badge-purple">✓ 基本情報技術者</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+        <p data-i18n="about.p3"></p>
+        <div class="about-info-grid">
+          <div class="info-item">
+            <span class="info-label" data-i18n="about.name_label"></span>
+            <span class="info-value">簡 浩男 (HonanJan)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label" data-i18n="about.role_label"></span>
+            <span class="info-value" data-i18n="about.role_value"></span>
+          </div>
+          <div class="info-item">
+            <span class="info-label" data-i18n="about.email_label"></span>
+            <span class="info-value"><a href="mailto:jianhaonan72@gmail.com">jianhaonan72@gmail.com</a></span>
+          </div>
+          <div class="info-item">
+            <span class="info-label" data-i18n="about.lang_label"></span>
+            <span class="info-value" data-i18n="about.lang_value"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section class="section section-dark" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="skills.title"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-categories">
+
+      <div class="skill-category">
+        <h3 class="category-title" data-i18n="skills.lang"></h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon skill-java">☕</div>
+            <div class="skill-name">Java 8</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-python">🐍</div>
+            <div class="skill-name">Python 3</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-js">JS</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-cobol">CB</div>
+            <div class="skill-name">COBOL</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-scss">Sc</div>
+            <div class="skill-name">SCSS/CSS</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title" data-i18n="skills.fw"></h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon skill-spring">🍃</div>
+            <div class="skill-name">Spring / SpringMVC</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-vue">V</div>
+            <div class="skill-name">Vue.js</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-mybatis">MB</div>
+            <div class="skill-name">MyBatis</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-hibernate">HB</div>
+            <div class="skill-name">Hibernate / Struts</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title" data-i18n="skills.db_tools"></h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon skill-oracle">🗄️</div>
+            <div class="skill-name">Oracle DB</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-kintone">Ki</div>
+            <div class="skill-name">kintone</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-git">🔀</div>
+            <div class="skill-name">Git / GitHub / BitBucket</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-azure">Az</div>
+            <div class="skill-name">Azure</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title" data-i18n="skills.ai"></h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon skill-dl">🤖</div>
+            <div class="skill-name">Deep Learning (U-Net)</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-cv">👁️</div>
+            <div class="skill-name">OpenCV</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== EXPERIENCE ========== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="exp.title"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026/02 – 2026/06</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-industry card-transport" data-i18n="exp.industry.transport"></span>
+            <div class="card-tags">
+              <span class="tag">ノーコード</span><span class="tag">kintone</span><span class="tag">backlog</span>
+            </div>
+          </div>
+          <h3 class="card-title" data-i18n="exp.p5.title"></h3>
+          <ul class="card-list">
+            <li data-i18n="exp.p5.d1"></li>
+            <li data-i18n="exp.p5.d2"></li>
+            <li data-i18n="exp.p5.d3"></li>
+          </ul>
+          <div class="card-meta">
+            <span data-i18n="exp.phase"></span>: <span data-i18n="exp.p5.phase"></span> &nbsp;|&nbsp;
+            <span data-i18n="exp.team"></span>: <span data-i18n="exp.p5.team"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025/02 – 2025/10</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-industry card-finance" data-i18n="exp.industry.finance"></span>
+            <div class="card-tags">
+              <span class="tag">Java8</span><span class="tag">Spring</span><span class="tag">Vue.js</span><span class="tag">Oracle</span>
+            </div>
+          </div>
+          <h3 class="card-title" data-i18n="exp.p4.title"></h3>
+          <ul class="card-list">
+            <li data-i18n="exp.p4.d1"></li>
+            <li data-i18n="exp.p4.d2"></li>
+            <li data-i18n="exp.p4.d3"></li>
+          </ul>
+          <div class="card-meta">
+            <span data-i18n="exp.phase"></span>: <span data-i18n="exp.p4.phase"></span> &nbsp;|&nbsp;
+            <span data-i18n="exp.team"></span>: <span data-i18n="exp.p4.team"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024/10 – 2025/01</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-industry card-finance" data-i18n="exp.industry.finance"></span>
+            <div class="card-tags">
+              <span class="tag">Java8</span><span class="tag">Spring</span><span class="tag">JUnit4</span><span class="tag">Azure</span>
+            </div>
+          </div>
+          <h3 class="card-title" data-i18n="exp.p3.title"></h3>
+          <ul class="card-list">
+            <li data-i18n="exp.p3.d1"></li>
+            <li data-i18n="exp.p3.d2"></li>
+            <li data-i18n="exp.p3.d3"></li>
+          </ul>
+          <div class="card-meta">
+            <span data-i18n="exp.phase"></span>: <span data-i18n="exp.p3.phase"></span> &nbsp;|&nbsp;
+            <span data-i18n="exp.team"></span>: <span data-i18n="exp.p3.team"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023/07 – 2024/09</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-industry card-finance" data-i18n="exp.industry.finance"></span>
+            <div class="card-tags">
+              <span class="tag">Java8</span><span class="tag">Spring</span><span class="tag">MyBatis</span><span class="tag">Oracle</span>
+            </div>
+          </div>
+          <h3 class="card-title" data-i18n="exp.p2.title"></h3>
+          <ul class="card-list">
+            <li data-i18n="exp.p2.d1"></li>
+            <li data-i18n="exp.p2.d2"></li>
+            <li data-i18n="exp.p2.d3"></li>
+          </ul>
+          <div class="card-meta">
+            <span data-i18n="exp.phase"></span>: <span data-i18n="exp.p2.phase"></span> &nbsp;|&nbsp;
+            <span data-i18n="exp.team"></span>: <span data-i18n="exp.p2.team"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022/10 – 2023/06</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-industry card-finance" data-i18n="exp.industry.finance"></span>
+            <div class="card-tags">
+              <span class="tag">COBOL</span><span class="tag">Oracle</span><span class="tag">Linux</span>
+            </div>
+          </div>
+          <h3 class="card-title" data-i18n="exp.p1.title"></h3>
+          <ul class="card-list">
+            <li data-i18n="exp.p1.d1"></li>
+            <li data-i18n="exp.p1.d2"></li>
+            <li data-i18n="exp.p1.d3"></li>
+          </ul>
+          <div class="card-meta">
+            <span data-i18n="exp.phase"></span>: <span data-i18n="exp.p1.phase"></span> &nbsp;|&nbsp;
+            <span data-i18n="exp.team"></span>: <span data-i18n="exp.p1.team"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section class="section section-dark" id="education">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="edu.title"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3 class="edu-degree" data-i18n="edu.d1.degree"></h3>
+          <p class="edu-school" data-i18n="edu.d1.school"></p>
+          <p class="edu-year">2022</p>
+          <p class="edu-desc" data-i18n="edu.d1.desc"></p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">💻</div>
+        <div class="edu-info">
+          <h3 class="edu-degree" data-i18n="edu.d2.degree"></h3>
+          <p class="edu-school" data-i18n="edu.d2.school"></p>
+          <p class="edu-year">2019</p>
+          <p class="edu-desc" data-i18n="edu.d2.desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:3rem">
+      <h3 class="section-subtitle" data-i18n="edu.research_title"></h3>
+    </div>
+    <div class="research-cards">
+      <div class="research-card">
+        <div class="research-icon">📊</div>
+        <h4 data-i18n="edu.r1.title"></h4>
+        <p data-i18n="edu.r1.desc"></p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">🧬</div>
+        <h4 data-i18n="edu.r2.title"></h4>
+        <p data-i18n="edu.r2.desc"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CERTIFICATIONS ========== -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="cert.title"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon cert-lang">🇯🇵</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.jlpt.name"></h4>
+          <p class="cert-date">2021 / 12</p>
+          <span class="cert-badge" data-i18n="cert.jlpt.level"></span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon cert-english">📝</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.toeic.name"></h4>
+          <p class="cert-date">2022 / 06</p>
+          <span class="cert-badge">595点</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon cert-it">💡</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.fe.name"></h4>
+          <p class="cert-date">2025 / 06</p>
+          <span class="cert-badge" data-i18n="cert.passed"></span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon cert-java">☕</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.java.name"></h4>
+          <p class="cert-date">2026 / 07</p>
+          <span class="cert-badge" data-i18n="cert.passed"></span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon cert-python">🐍</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.python.name"></h4>
+          <p class="cert-date">2026 / 07</p>
+          <span class="cert-badge" data-i18n="cert.passed"></span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon cert-security">🔐</div>
+        <div class="cert-body">
+          <h4 data-i18n="cert.sg.name"></h4>
+          <p class="cert-date">2026 / 10</p>
+          <span class="cert-badge" data-i18n="cert.passed"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="contact.title"></h2>
+      <div class="section-line"></div>
+      <p class="section-desc" data-i18n="contact.desc"></p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:jianhaonan72@gmail.com" class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h4 data-i18n="contact.email_label"></h4>
+        <p>jianhaonan72@gmail.com</p>
+      </a>
+      <a href="https://github.com/jianhaonan72" class="contact-card" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        </div>
+        <h4>GitHub</h4>
+        <p>github.com/jianhaonan72</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <p data-i18n="footer.copy"></p>
+    <p class="footer-sub" data-i18n="footer.made"></p>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
