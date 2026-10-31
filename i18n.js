@@ -12,7 +12,7 @@ const translations = {
     "hero.contact": "联系我",
     "hero.work": "查看经历",
     "about.title": "关于我",
-    "about.p1": "我是簡浩男（HonanJan），一名在日本工作的软件工程师，拥有超过 4 年的金融行业系统开发经验，主要使用 Java + Spring 技术栈。",
+    "about.p1": "我是简浩男（HonanJan），一名在日本工作的软件工程师，拥有超过 4 年的金融行业系统开发经验，主要使用 Java + Spring 技术栈。",
     "about.p2": "在校期间深入研究深度学习（U-Net）与图像处理技术（OpenCV），具备 AI 工程实践经验。日本语能力试験 N1 合格，能够流畅使用日语进行技术沟通与文档撰写。",
     "about.p3": "目前所在组织：ITエンジニアリング本部 DX開発エンジニアリング部 開発4G，专注于企业级系统的设计、开发与测试。",
     "about.name_label": "姓名",
