@@ -102,7 +102,7 @@ const translations = {
     "hero.contact": "Contact Me",
     "hero.work": "View Experience",
     "about.title": "About Me",
-    "about.p1": "I'm HonanJan (簡浩男), a software engineer based in Japan with 4+ years of experience in financial industry system development, primarily using the Java + Spring technology stack.",
+    "about.p1": "I'm JIAN HAONAN, a software engineer based in Japan with 4+ years of experience in financial industry system development, primarily using the Java + Spring technology stack.",
     "about.p2": "During my academic years, I conducted research in deep learning (U-Net) and image processing (OpenCV), gaining hands-on AI engineering experience. I hold JLPT N1 certification and can communicate fluently in Japanese for technical discussions and documentation.",
     "about.p3": "Current organization: IT Engineering HQ, DX Development Engineering Dept., Dev Group 4 — specializing in enterprise system design, development, and testing.",
     "about.name_label": "Name",
